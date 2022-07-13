@@ -372,6 +372,6 @@
          margin-bottom: 10%;
      }
      .content-about p {
-         width: auto;
+         width: 100%;
      }
  }
