@@ -1,0 +1,10 @@
+- Bẫy được 5 sự kiện JS(Đã hoàn thành)
+    + Sự kiện Scroll chuột hiển thị nút go to top
+    + Sự kiện onclick
+    + Sự kiện bật tắt sáng tối
+    + Sự kiện tải lại trang
+    + Sự kiện chuột phải (ContextMenu)
+- Hiệu ứng menu
+- Hộp thoại (alert)
+- Xác thực form đầy đù(đã hoàn thành)
+- Jquery(Loader, Gotop)

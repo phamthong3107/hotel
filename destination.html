@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <script src="aos-master/dist/aos.js"></script>
+    <script src="/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="/jquery-ui-1.13.2.custom/jquery-ui.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <!--Contextmenu-->
+    <div id="context-menu">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="destination.html"><i class="fa-solid fa-location-dot"></i>Destination</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i>Services</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-address-card"></i>About</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+        </ul>
+    </div>
+    <!--Reload-->
+    <div class="reload-content d-flex align-items-center justify-content-center">
+        <div class="loader"></div>
+    </div>
+    <!--Navbar-pc-->
+    <div id="gotop">
+        <button class="btn rounded-circle" style="background-color: #00917c; color: #fff;"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="margin: 3rem;" id="navbar-pc">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Hotell</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="destination.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="destination.html">Menu one</a></li>
+                            <li><a class="dropdown-item" href="destination.html">Menu two</a></li>
+                            <li><a class="dropdown-item" href="destination.html">Dropdown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html" tabindex="-1" aria-disabled="true">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" tabindex="-1" aria-disabled="true">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-right">
+                    <a id="phone-dialog" class="btn text-white rounded-circle"><i class="fa-solid fa-phone"></i></a>
+                    <span class="text-white me-2">123-456-789</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-white text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Login
+  </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Login From</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-text ">
+                                        <input id="username" type="text" placeholder="Username">
+                                        <small></small>
+                                    </div>
+                                    <div class="form-text ">
+                                        <input id="email" type="email" placeholder="Email">
+                                        <small></small>
+                                    </div>
+                                    <div class="form-text ">
+                                        <input id="password" type="password" placeholder="Password">
+                                        <small></small>
+                                    </div>
+                                    <div class="form-text ">
+                                        <input id="confirm-password" type="password" placeholder="Confirm Password">
+                                        <small></small>
+                                    </div>
+                                    <button type="button" id="RegexForm" class="btn btn-primary w-100 rounded-pill">Login</button>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Not a member ? <a href="signup.html">Signup</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navber-mobile-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="margin: 3rem;" id="navbar-mb">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Hotell</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 py-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  active  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Menu one</a></li>
+                            <li><a class="dropdown-item" href="#">Menu two</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html" tabindex="-1" aria-disabled="true">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-right text-center">
+                    <a id="phone-dialog" class="btn text-white rounded-circle"><i class="fa-solid fa-phone"></i></a>
+                    <span class="text-white me-2">123-456-789</span>
+                    <a href="signup.html" class="btn btn-outline-white text-white">Signup</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!--Content-section-->
+    <section>
+        <!--Header-->
+        <div class="container-fluid header-destination mb-5">
+            <div class="header-content">
+                <h1 class="text-white" data-aos="fade-up">Popular Places </h1>
+                <a href="#" data-aos="fade-up" class="btn rounded-pill text-white px-4 py-3">See video</a>
+            </div>
+        </div>
+        <!--Special-->
+        <div class="container pt-5" id="special">
+            <h5 class="text-content text-center">SPECIAL OFFERS & DISCOUNTS</h5>
+            <p class="text-center mx-auto mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-4.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>Kaafu Atoll</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>520</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> Maldives</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-5.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>The White City</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>520</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> 
+                        Greece</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-6.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>Boyo-In Temple</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>750</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> 
+                        United States</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-7.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>Arabische Emiraten</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>520</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> 
+                        Dubai</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-4.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>Kaafu Atoll</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>520</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> Maldives</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-5.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>The White City</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>520</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> 
+                        Greece</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-6.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>Boyo-In Temple</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>750</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> 
+                        United States</span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-5">
+                    <img src="img/blog-7.jpg" class="img-fluid img-special mb-3">
+                    <div class="d-flex">
+                        <h3>Arabische Emiraten</h3>
+                        <div class="price ms-auto">
+                            <sup>$</sup>
+                            <span>520</span>
+                        </div>
+                    </div>
+                    <span class="text-muted"><i class="fa-solid fa-location-dot"></i> 
+                        Dubai</span>
+                </div>
+            </div>
+        </div>
+        <!--Instagram-->
+        <div class="container-fluid" id="instagram">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5 class="text-content" data-aos="fade-up">INSTAGRAM</h5>
+                    </div>
+                    <div class="col-lg-7">
+                        <p data-aos="fade-up">
+
+                            A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. </div>
+                </div>
+                <div class="owl-carousel">
+                    <div class="item">
+                        <img src="img/blog-1.jpg" class="img-fluid">
+                        <div class="img-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/background.jpg" class="img-fluid">
+                        <div class="img-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/blog-2.jpg" class="img-fluid">
+                        <div class="img-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/blog-3.jpg" class="img-fluid">
+                        <div class="img-overlay">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="container-fluid bg-light" id="footer">
+            <footer class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul>
+                            <li class="active">Home</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Places</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Term</a></li>
+                            <li><a href="#">Privacy</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <li class="active">Practice Area</li>
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Popular places</a></li>
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Tour</a></li>
+                            <li><a href="#">Family Vacation</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <li class="active">Services</li>
+                            <li><a href="#">Tour</a></li>
+                            <li><a href="#">Swimming</a></li>
+                            <li><a href="#">Kayak</a></li>
+                            <li><a href="#">Surfing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <li class="active">Contact</li>
+                            <li><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+                            <li><a href="#">+1(123)-456-7890</a></li>
+                            <li><a href="#">+1(123)-456-7890</a></li>
+                            <li><a href="#">info@mydomain.com</a></li>
+                        </ul>
+                        <p>Connect</p>
+                        <div class="icon-connect">
+                            <a href="#" class="btn text-white rounded-circle icon-ft"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="btn text-white rounded-circle icon-ft"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="btn text-white rounded-circle icon-ft"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="btn text-white rounded-circle icon-ft"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="btn text-white rounded-circle icon-ft"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="#" class="btn text-white rounded-circle icon-ft"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <span class="copy-right text-center text-muted">Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart text-danger"></i> by Phạm Quốc Thông</span>
+                </div>
+            </footer>
+        </div>
+        <!--Dialog-->
+        <div id="dialog-content" title="Phone Error">
+            <div class="row">
+                <div class="col-lg-3"><i class="fa-sharp fa-solid fa-circle-exclamation"></i></div>
+                <div class="col-lg-9">Feature is not completed yet! Please click contact or exit</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script src="jquery.js"></script>
+
+</html>
